@@ -6,8 +6,216 @@
 
 body {
   min-height: 100vh;
-  min-width: 480px;
   max-width: 1440px;
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
+}
+
+.button {
+  display: block;
+  background-color: @button-bg;
+  color: @button-color;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0;
+  border: 0;
+}
+
+.header-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media @desktop {
+    padding-top: 55px;
+    grid-template-rows: auto auto auto;
+  }
+}
+
+.contacts {
+  grid-column: span 3;
+  .reset-list;
+  padding: 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  background-color: @contacts-mobile-bg;
+
+  @media @desktop {
+    grid-column: span 1;
+    grid-row: span 2;
+    flex-wrap: wrap;
+    background-color: transparent;
+    padding: 5px;
+    align-self: center;
+
+    &__link {
+      font-size: 18px;
+    }
+  }
+}
+
+.logo {
+  @media @desktop {
+    grid-row: span 2;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+.whatsapp-link,
+.email-link {
+  position: relative;
+  color: @text-color;
+  text-decoration: none;
+}
+
+.whatsapp-link {
+  padding-left: 40px;
+
+  &::before {
+    content: '';
+    width: 28px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    background-image: url('../img/whatsapp.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.email-link {
+  padding-left: 35px;
+
+  &::before {
+    content: '';
+    width: 28px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    background-image: url('../img/email.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.social-list {
+  .reset-list;
+  display: grid;
+  grid-template-columns: repeat(3, 26px);
+  gap: 18px;
+  align-self: center;
+  margin-left: 60px;
+
+  @media @desktop {
+    justify-self: end;
+  }
+}
+
+.social-list__link {
+  display: block;
+}
+
+.menu-button {
+  justify-self: right;
+  margin-right: 25px;
+  padding: 0;
+  align-self: center;
+  border: 0;
+  background-color: transparent;
+
+  @media @desktop {
+    display: none;
+  }
+}
+
+.site-nav {
+  grid-column: span 3;
+
+  @media @desktop {
+    margin-top: 35px;
+  }
+}
+
+.site-nav__list {
+  .reset-list;
+  padding-top: 20px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+  @media @desktop {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.site-nav__item:not(:last-child) {
+  margin-bottom: 10px;
+
+  @media @desktop {
+    margin-bottom: 0;
+  }
+}
+
+.site-nav__item {
+  @media @desktop {
+    flex-grow: 1;
+  }
+}
+
+.site-nav__link {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: @text-color;
+  text-align: center;
+
+  @media @desktop {
+    font-size: 18px;
+    font-weight: 600;
+    background-color: @bg-menu-items-desktop;
+    box-shadow: 0px 1px 2px rgba(88, 88, 88, 0.2), 0px 2px 4px rgba(88, 88, 88, 0.1);
+    border-radius: 6px;
+  }
+}
+
+.get-consult {
+  width: 363px;
+  height: 38px;
+  justify-self: center;
+  margin-top: 15px;
+  grid-column: span 3;
+
+  @media @desktop {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    justify-self: end;
+  }
+}
+
+.menu-hide {
+  display: none;
+
+  @media @desktop {
+    display: block;
+  }
+}
+
+.contacts__item_address {
+  display: none;
+
+  @media @tablet {
+    display: block;
+  }
+
+  @media @desktop {
+    padding-top: 5px;
+    font-size: 18px;
+  }
 }

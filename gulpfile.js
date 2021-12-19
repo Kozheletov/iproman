@@ -6,6 +6,7 @@ const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const minCSS = require('gulp-clean-css');
 const rename = require('gulp-rename');
+const gulpSquoosh = require('gulp-squoosh');
 
 const watcher = () => {
   browserSync.init({
@@ -34,7 +35,7 @@ const css = () => {
 };
 
 const image = () => {
-  return src('./source/img/*').pipe(dest('./release/images'));
+  return src('./source/img/*').pipe(dest('./release/img'));
 };
 
 const scripts = () => {

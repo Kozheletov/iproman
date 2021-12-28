@@ -279,38 +279,324 @@
           </div>
         </div>
       </section>
-      <section class="feature content">
-        <h2 class="visually-hidden">Наши преимущества</h2>
-        <ul class="feature__cards">
-          <li class="feature__card">
-            <div class="feature__wrap-img">
-              <img src="img/team-profi.svg" alt="Команда профессионалов" class="feature__img" />
+      <section class="feature">
+        <div class="content">
+          <h2 class="visually-hidden">Наши преимущества</h2>
+          <ul class="feature__cards">
+            <li class="feature__card">
+              <div class="feature__wrap-img">
+                <img src="img/team-profi.svg" alt="Команда профессионалов" class="feature__img" />
+              </div>
+              <h3 class="feature__title">Пять в одном</h3>
+              <p class="feature__description">5 интернет-специалистов в разных областях работают на Вас</p>
+            </li>
+            <li class="feature__card">
+              <div class="feature__wrap-img">
+                <img src="img/profit.svg" alt="Прибыль" class="feature__img" />
+              </div>
+              <h3 class="feature__title">700&nbsp;000&nbsp;&#x20bd;</h3>
+              <p class="feature__description">
+                Ежемесячная прибыль наших клиентов увеличилась суммарно на 700 000 рублей
+              </p>
+            </li>
+            <li class="feature__card">
+              <div class="feature__wrap-img">
+                <img src="img/planet.svg" alt="Планета" class="feature__img" />
+              </div>
+              <h3 class="feature__title">Умеем работать</h3>
+              <p class="feature__description">
+                Вы получаете качественную услугу, работающий продукт с заявленными характеристиками в
+                заявленный срок
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="order content">
+        <div class="oreder__grid">
+          <div class="order__wrap-img">
+            <picture>
+              <source media="(min-width: 1170px)" srcset="img/contacts-foto-desktop.webp" />
+              <img src="img/contacts-foto-mobile.webp" alt="Фото офиса iproman" />
+            </picture>
+          </div>
+          <h2 class="order__title">Свяжитесь с нами и мы сделаем профессионально</h2>
+          <form class="order__form">
+            <div class="order__form-grid">
+              <div class="order__wrap-input">
+                <label for="userName" class="order__label">Ваше имя:</label>
+                <input
+                  type="text"
+                  id="userName"
+                  name="userName"
+                  class="order__input"
+                  placeholder="Введите ваше имя"
+                />
+              </div>
+              <div class="order__wrap-input">
+                <label for="phone" class="order__label">Ваш телефон:</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="order__input"
+                  placeholder="Введите ваш номер телефона"
+                />
+              </div>
+              <div class="order__wrap-input">
+                <label for="email" class="order__label">Ваша почта:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="order__input"
+                  placeholder="Введите ваш адрес электронной почты"
+                />
+              </div>
+              <div class="order__wrap-select">
+                <label for="changeConnect" class="order__label">Выбор связи:</label>
+                <select class="order__select" name="changeConnect" id="changeConnect">
+                  <option value="phone">Звонок на телефон</option>
+                  <option value="telegram">Telegram</option>
+                  <option value="email">E-mail</option>
+                </select>
+              </div>
+              <button class="button order__button" type="button">Отправить заявку</button>
+              <div class="order__wrap-checkboxes">
+                <div class="order__block-checkbox">
+                  <label for="checkBusiness" class="order__label-checkbox">
+                    <input
+                      type="checkbox"
+                      class="order__checkbox visually-hidden"
+                      name="checkBusiness"
+                      id="checkBusiness"
+                    />
+                    <span class="order__checkmark"></span>
+                    <span class="order__checkbox-text">Проверка присутствия бизнеса в интернете</span>
+                  </label>
+                </div>
+                <div class="order__block-checkbox">
+                  <label for="checkboxSite" class="order__label-checkbox">
+                    <input
+                      type="checkbox"
+                      class="order__checkbox visually-hidden"
+                      name="checkboxSite"
+                      id="checkboxSite"
+                    />
+                    <span class="order__checkmark"></span>
+                    <span class="order__checkbox-text">Интернет-сайт для бизнеса</span>
+                  </label>
+                </div>
+                <div class="order__block-checkbox">
+                  <label for="checkboxSystem" class="order__label-checkbox">
+                    <input
+                      type="checkbox"
+                      class="order__checkbox visually-hidden"
+                      name="checkboxSystem"
+                      id="checkboxSystem"
+                    />
+                    <span class="order__checkmark"></span>
+                    <span class="order__checkbox-text">Система</span>
+                  </label>
+                </div>
+                <div class="order__block-checkbox">
+                  <label for="checkboxManagment" class="order__label-checkbox">
+                    <input
+                      type="checkbox"
+                      class="order__checkbox visually-hidden"
+                      name="checkboxManagment"
+                      id="checkboxManagment"
+                    />
+                    <span class="order__checkmark"></span>
+                    <span class="order__checkbox-text">Управление</span>
+                  </label>
+                </div>
+              </div>
             </div>
-            <h3 class="feature__title">Пять в одном</h3>
-            <p class="feature__description">5 интернет-специалистов в разных областях работают на Вас</p>
-          </li>
-          <li class="feature__card">
-            <div class="feature__wrap-img">
-              <img src="img/profit.svg" alt="Прибыль" class="feature__img" />
-            </div>
-            <h3 class="feature__title">700&nbsp;000&nbsp;&#x20bd;</h3>
-            <p class="feature__description">
-              Ежемесячная прибыль наших клиентов увеличилась суммарно на 700 000 рублей
-            </p>
-          </li>
-          <li class="feature__card">
-            <div class="feature__wrap-img">
-              <img src="img/planet.svg" alt="Планета" class="feature__img" />
-            </div>
-            <h3 class="feature__title">Умеем работать</h3>
-            <p class="feature__description">
-              Вы получаете качественную услугу, работающий продукт с заявленными характеристиками в заявленный
-              срок
-            </p>
-          </li>
-        </ul>
+          </form>
+        </div>
       </section>
     </main>
+    <footer class="page-footer">
+      <div class="footer__grid content">
+        <svg
+          class="logo-footer"
+          width="112"
+          height="22"
+          viewBox="0 0 112 22"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_29_772)">
+            <path
+              d="M3.24128e-07 2.64578C0.00174249 1.94438 0.285052 1.27221 0.787936 0.776369C1.29082 0.280524 1.97233 0.00137387 2.68334 0C3.21411 6.32177e-08 3.73296 0.155281 4.17426 0.446203C4.61556 0.737125 4.95949 1.15062 5.16254 1.63438C5.3656 2.11815 5.41866 2.65046 5.31502 3.16397C5.21137 3.67749 4.95568 4.14915 4.58028 4.5193C4.20487 4.88945 3.72663 5.14146 3.20602 5.24345C2.68542 5.34544 2.14585 5.29283 1.65556 5.09228C1.16526 4.89173 0.746273 4.55225 0.451583 4.11677C0.156893 3.68129 -0.000260497 3.16937 3.24128e-07 2.64578ZM0.325693 7.00337H5.01065V21.6527H0.325693V7.00337Z"
+              fill="url(#paint0_linear_29_772)"
+            />
+            <path
+              d="M24.1712 9.704C24.1712 14.7562 21.1635 16.9753 15.7177 16.9753H12.9803V21.6581H8.2334V2.646H15.9551C21.2993 2.646 24.1712 5.10576 24.1712 9.704ZM19.2397 9.86399C19.2397 7.78275 18.2639 6.70962 15.7177 6.70962H12.9803V12.9924H15.5819C18.2099 12.9924 19.2397 11.7358 19.2397 9.86399Z"
+              fill="url(#paint1_linear_29_772)"
+            />
+            <path
+              d="M26.178 7.00321H30.648V8.71503C31.7596 7.43246 33.2773 6.63379 35.147 6.63379C35.3648 6.63611 35.5821 6.65437 35.7971 6.68842V11.6314C35.2801 11.522 34.7539 11.4602 34.2254 11.4467C32.2738 11.4467 30.8379 12.4352 30.8379 14.921V21.6577H26.178V7.00321Z"
+              fill="url(#paint2_linear_29_772)"
+            />
+            <path
+              d="M36.9629 14.3279C36.9629 9.62557 40.2172 6.63379 45.2001 6.63379C50.1594 6.63379 53.411 9.62557 53.411 14.3331C53.411 19.0653 50.1594 22.0076 45.2001 22.0076C40.2172 21.9998 36.9629 19.0601 36.9629 14.3279ZM48.5876 14.3279C48.5876 12.1894 47.2334 10.7729 45.2001 10.7729C43.1418 10.7729 41.7863 12.1894 41.7863 14.3279C41.7863 16.4937 43.1418 17.8569 45.2001 17.8569C47.2334 17.8569 48.5876 16.4937 48.5876 14.3279Z"
+              fill="url(#paint3_linear_29_772)"
+            />
+            <path
+              d="M76.3635 2.61963V21.6526H71.7313V12.5367L66.962 18.4982H65.3085L60.5391 12.5901V21.6526H55.9082V2.61963H58.374L66.1537 12.4028L73.903 2.61963H76.3635Z"
+              fill="#1A1A1A"
+            />
+            <path
+              d="M78.832 14.3278C78.832 9.62294 81.6011 6.60254 85.6887 6.60254C87.1247 6.60254 88.7505 7.00318 89.8344 8.0464V7.00578H94.4415V21.6525H89.9412V20.422C88.8863 21.6772 87.1721 21.9985 85.8773 21.9985C81.5681 21.9998 78.832 18.9794 78.832 14.3278ZM89.9412 16.3323V12.2167C89.4006 11.2268 88.2138 10.6662 86.9612 10.6662C85.0373 10.6662 83.6541 11.9214 83.6541 14.3083C83.6541 16.5795 84.9279 17.97 87.0693 17.97C88.2613 17.9635 89.3452 17.4822 89.9412 16.3323Z"
+              fill="#1A1A1A"
+            />
+            <path
+              d="M97.5576 7.00321H102.028V8.15309C103.307 7.17289 104.879 6.6386 106.499 6.63379C110.428 6.63379 112 8.42496 112 12.7826V21.6577H107.313V14.1145C107.313 11.6014 106.607 10.6922 104.819 10.6922C104.323 10.6941 103.833 10.8027 103.384 11.0105C102.934 11.2183 102.536 11.5203 102.218 11.8954V21.6512H97.5576V7.00321Z"
+              fill="#1A1A1A"
+            />
+          </g>
+          <defs>
+            <linearGradient
+              id="paint0_linear_29_772"
+              x1="-5.14119"
+              y1="7.94903"
+              x2="34.8891"
+              y2="25.079"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#00DA5D" />
+              <stop offset="1" stop-color="#008049" />
+            </linearGradient>
+            <linearGradient
+              id="paint1_linear_29_772"
+              x1="-458.905"
+              y1="728.719"
+              x2="4628.44"
+              y2="2528.89"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#00DA5D" />
+              <stop offset="1" stop-color="#008049" />
+            </linearGradient>
+            <linearGradient
+              id="paint2_linear_29_772"
+              x1="-115.031"
+              y1="59.6683"
+              x2="3104.68"
+              y2="929.819"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#00DA5D" />
+              <stop offset="1" stop-color="#008049" />
+            </linearGradient>
+            <linearGradient
+              id="paint3_linear_29_772"
+              x1="56.7006"
+              y1="-517.307"
+              x2="4963.58"
+              y2="1698.67"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#00DA5D" />
+              <stop offset="1" stop-color="#008049" />
+            </linearGradient>
+            <clipPath id="clip0_29_772">
+              <rect width="112" height="22" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+        <nav class="site-nav-footer">
+          <ul class="site-nav-footer__list">
+            <li class="site-nav-footer__item"><a href="#" class="site-nav-footer__link">Услуги и цены</a></li>
+            <li class="site-nav-footer__item">
+              <a href="#" class="site-nav-footer__link">Наши преимущества</a>
+            </li>
+            <li class="site-nav-footer__item"><a href="#" class="site-nav-footer__link">О компании</a></li>
+            <li class="site-nav-footer__item"><a href="#" class="site-nav-footer__link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts-footer">
+          <li class="contacts-footer__item">
+            <a href="#" class="contacts__link whatsapp-link">+66 94 583-33-78</a>
+          </li>
+          <li class="contacts-footer_email contacts__item_email">
+            <a href="mailto:info@iproman.ru" class="contacts__link email-link">info@iproman.ru</a>
+          </li>
+        </ul>
+        <ul class="social-list social-list_footer">
+          <li class="social-list__item">
+            <a href="#" class="social-list__link">
+              <svg
+                class="social-list__icon"
+                width="26"
+                height="26"
+                viewBox="0 0 26 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="13" cy="13" r="13" fill="#B4B4B4" />
+                <path
+                  d="M18.1225 7.08548L6.60702 12.3803C5.82113 12.7567 5.82568 13.2794 6.46283 13.5125L9.41932 14.6122L16.2598 9.46609C16.5832 9.23144 16.8787 9.35767 16.6358 9.61478L11.0937 15.5787H11.0924L11.0937 15.5795L10.8898 19.2131C11.1885 19.2131 11.3204 19.0497 11.488 18.8569L12.924 17.1919L15.911 19.8226C16.4618 20.1843 16.8573 19.9984 16.9944 19.2147L18.9552 8.19602C19.1559 7.23649 18.648 6.80203 18.1225 7.08548Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="#" class="social-list__link">
+              <svg
+                class="social-list__icon"
+                width="26"
+                height="26"
+                viewBox="0 0 26 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="13" cy="13" r="13" fill="#B4B4B4" />
+                <path
+                  d="M17.0562 12.3169C17.0712 10.5094 15.5318 8.8525 13.6249 8.62312C13.5837 8.61798 13.5427 8.61173 13.5018 8.60437C13.406 8.58602 13.3088 8.57557 13.2112 8.57312C12.8199 8.57312 12.7156 8.84812 12.6881 9.01124C12.6612 9.17062 12.6868 9.305 12.7637 9.40937C12.8931 9.585 13.1212 9.61625 13.3043 9.64125C13.3574 9.64875 13.4081 9.65562 13.4506 9.66499C15.1643 10.0481 15.7412 10.65 16.0231 12.3494C16.0299 12.3906 16.0331 12.4419 16.0368 12.4962C16.0493 12.6994 16.0743 13.1219 16.5287 13.1219C16.5662 13.1219 16.6074 13.1187 16.6499 13.1125C17.0724 13.0481 17.0593 12.6619 17.0531 12.4762C17.0512 12.4237 17.0493 12.3744 17.0543 12.3412C17.0553 12.333 17.0557 12.3246 17.0556 12.3162L17.0562 12.3169Z"
+                  fill="white"
+                />
+                <path
+                  d="M13.1 7.96C13.1513 7.96375 13.1988 7.9675 13.2388 7.97312C16.0531 8.40625 17.3475 9.73937 17.7056 12.5756C17.7119 12.6237 17.7131 12.6825 17.7138 12.7444C17.7175 12.9662 17.725 13.4275 18.22 13.4369H18.235C18.3906 13.4369 18.5138 13.39 18.6025 13.2975C18.7563 13.1369 18.7463 12.8975 18.7369 12.705C18.735 12.6575 18.7331 12.6131 18.7331 12.5737C18.7694 9.67375 16.2581 7.04312 13.3606 6.94563C13.3481 6.94563 13.3369 6.94563 13.3256 6.9475C13.3142 6.94894 13.3027 6.94957 13.2913 6.94938C13.2619 6.94938 13.2269 6.94688 13.1888 6.94438C13.1438 6.94125 13.0919 6.9375 13.0388 6.9375C12.5775 6.9375 12.49 7.26562 12.4788 7.46125C12.4531 7.91312 12.89 7.945 13.1 7.96ZM17.57 16.2412C17.5096 16.1953 17.4498 16.1487 17.3906 16.1012C17.0831 15.8537 16.7563 15.6262 16.4406 15.4056L16.2438 15.2681C15.8388 14.9837 15.475 14.8456 15.1313 14.8456C14.6675 14.8456 14.2638 15.1019 13.93 15.6062C13.7825 15.83 13.6031 15.9387 13.3825 15.9387C13.2293 15.9334 13.0789 15.8957 12.9413 15.8281C11.635 15.2356 10.7013 14.3269 10.1675 13.1275C9.90938 12.5475 9.99313 12.1687 10.4469 11.86C10.705 11.685 11.1844 11.3594 11.1513 10.735C11.1125 10.0269 9.54938 7.895 8.89063 7.65312C8.60902 7.5504 8.30033 7.54952 8.01813 7.65062C7.26126 7.905 6.71876 8.3525 6.44688 8.94312C6.18438 9.51437 6.19688 10.185 6.48063 10.8825C7.30251 12.8994 8.45751 14.6581 9.91438 16.1094C11.34 17.53 13.0925 18.6931 15.1225 19.5675C15.3056 19.6462 15.4975 19.6894 15.6381 19.7206C15.6856 19.7312 15.7269 19.7406 15.7569 19.7487C15.7734 19.7532 15.7904 19.7555 15.8075 19.7556H15.8238C16.7788 19.7556 17.9256 18.8831 18.2775 17.8887C18.5863 17.0175 18.0225 16.5869 17.57 16.2412ZM13.5225 10.2644C13.3594 10.2681 13.0188 10.2769 12.8994 10.6231C12.8431 10.7856 12.85 10.9256 12.9194 11.0412C13.0206 11.21 13.215 11.2625 13.3913 11.2912C14.0319 11.3937 14.3613 11.7475 14.4269 12.4056C14.4575 12.7119 14.6644 12.9262 14.9288 12.9262C14.9488 12.9262 14.9689 12.925 14.9888 12.9225C15.3075 12.885 15.4619 12.6506 15.4481 12.2262C15.4531 11.7837 15.2219 11.2812 14.8275 10.8812C14.4325 10.48 13.9563 10.2537 13.5225 10.2644Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="#" class="social-list__link">
+              <svg
+                class="social-list__icon"
+                width="26"
+                height="26"
+                viewBox="0 0 26 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="13" cy="13" r="13" fill="#B4B4B4" />
+                <g clip-path="url(#clip0_2_1887)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M19.6562 9.7175C19.76 9.37625 19.6562 9.125 19.1594 9.125H17.5188C17.1013 9.125 16.9087 9.34188 16.8044 9.58125C16.8044 9.58125 15.97 11.5788 14.7881 12.8763C14.4056 13.2525 14.2319 13.3719 14.0231 13.3719C13.9187 13.3719 13.7619 13.2525 13.7619 12.9106V9.7175C13.7619 9.3075 13.6469 9.125 13.2994 9.125H10.7194C10.4588 9.125 10.3019 9.315 10.3019 9.49563C10.3019 9.88375 10.8931 9.97375 10.9538 11.0663V13.44C10.9538 13.9606 10.8581 14.055 10.6494 14.055C10.0931 14.055 8.74 12.0481 7.93687 9.75187C7.78125 9.305 7.62375 9.125 7.20438 9.125H5.5625C5.09375 9.125 5 9.34188 5 9.58125C5 10.0075 5.55625 12.125 7.59063 14.9256C8.94688 16.8381 10.8562 17.875 12.5956 17.875C13.6388 17.875 13.7675 17.645 13.7675 17.2481V15.8025C13.7675 15.3419 13.8663 15.25 14.1969 15.25C14.4406 15.25 14.8575 15.37 15.8313 16.2919C16.9438 17.385 17.1269 17.875 17.7531 17.875H19.3938C19.8625 17.875 20.0975 17.645 19.9625 17.19C19.8138 16.7375 19.2825 16.0806 18.5781 15.3013C18.1956 14.8575 17.6219 14.3794 17.4475 14.14C17.2044 13.8331 17.2738 13.6963 17.4475 13.4231C17.4475 13.4231 19.4475 10.6569 19.6556 9.7175H19.6562Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2_1887">
+                    <rect width="15" height="15" fill="white" transform="translate(5 6)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p class="copyright">Iproman.ru © Все права защищены</p>
+      </div>
+    </footer>
     <script src="js/scripts.min.js"></script>
   </body>
 </html>

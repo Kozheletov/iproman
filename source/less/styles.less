@@ -629,6 +629,7 @@ body {
 
   @media @desktop {
     padding: 75px 0 50px;
+    border-bottom: 1px solid @border-color-section-feature;
   }
 
   &__cards {
@@ -677,6 +678,85 @@ body {
       padding-left: 10px;
       padding-right: 10px;
     }
+  }
+}
+
+.order {
+  padding: 0 25px 60px;
+
+  @media @desktop {
+    padding: 60px 0 70px;
+  }
+
+  &__wrap-input {
+    margin-bottom: 20px;
+  }
+
+  &__label {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 15px 25px;
+    border-width: 0;
+    background-color: @input-bg;
+    border-radius: 6px;
+
+    &::placeholder {
+      color: @input-placeholder-color;
+    }
+  }
+
+  &__select {
+    width: 100%;
+    line-height: 22px;
+    padding: 15px 20px;
+    border-width: 0;
+    background-color: @input-bg;
+    border-radius: 6px;
+    color: @input-placeholder-color;
+  }
+
+  &__button {
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  &__label-checkbox {
+    display: flex;
+  }
+
+  &__checkbox-text {
+    cursor: pointer;
+  }
+
+  &__checkmark {
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+    border: 2px solid @accent-color;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      width: 12px;
+      height: 12px;
+      background-color: @accent-color;
+      opacity: 0;
+    }
+  }
+
+  .order__checkbox:checked + &__checkmark::before {
+    opacity: 1;
   }
 }
 

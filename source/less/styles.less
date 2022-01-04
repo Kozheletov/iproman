@@ -683,6 +683,7 @@ body {
 
 .order {
   padding: 0 25px 60px;
+  border-bottom: 1px solid @services-border;
 
   @media @desktop {
     padding: 60px 0 70px;
@@ -741,6 +742,7 @@ body {
     border-width: 0;
     background-color: @input-bg;
     border-radius: 6px;
+    cursor: pointer;
 
     @media @desktop {
       font-size: 18px;
@@ -767,6 +769,7 @@ body {
     background-image: url('../img/down-circle-select.svg');
     background-repeat: no-repeat;
     background-position: calc(100% - 25px) center;
+    cursor: pointer;
   }
 
   &__button {
@@ -862,6 +865,102 @@ body {
       width: 180px;
       grid-row: 4/6;
     }
+  }
+}
+
+.page-footer {
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media @desktop {
+    grid-template-columns: auto 1fr;
+  }
+}
+
+.site-nav-footer {
+  display: none;
+
+  @media @desktop {
+    display: block;
+    justify-self: end;
+  }
+}
+
+.site-nav-footer__list {
+  @media @desktop {
+    .reset-list();
+    display: flex;
+  }
+}
+
+.site-nav-footer__item {
+  @media @desktop {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+}
+
+.site-nav-footer__link {
+  @media @desktop {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: @text-color;
+  }
+}
+
+.social-list_footer {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  justify-self: end;
+
+  @media @desktop {
+    grid-row: 2/3;
+    align-self: end;
+  }
+}
+
+.contacts-footer {
+  grid-column: span 2;
+  .reset-list();
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+  margin-bottom: 25px;
+
+  @media @desktop {
+    display: block;
+    grid-column: span 1;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+}
+
+.contacts-footer__item:not(:last-child) {
+  @media @desktop {
+    margin-bottom: 10px;
+  }
+}
+
+.copyright {
+  grid-column: span 2;
+  font-size: 10px;
+  line-height: 20px;
+  color: @input-placeholder-color;
+  text-align: center;
+
+  @media @desktop {
+    margin-top: 25px;
+    text-align: left;
   }
 }
 

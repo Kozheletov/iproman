@@ -312,114 +312,116 @@
           </ul>
         </div>
       </section>
-      <section class="order content">
-        <div class="order__grid">
-          <div class="order__wrap-img">
-            <picture>
-              <source media="(min-width: 1170px)" srcset="img/contacts-foto-desktop.webp" />
-              <img src="img/contacts-foto-mobile.webp" alt="Фото офиса iproman" />
-            </picture>
-          </div>
-          <h2 class="order__title">Свяжитесь с нами и мы сделаем профессионально</h2>
-          <form class="order__form">
-            <div class="order__form-grid">
-              <div class="order__wrap-input">
-                <label for="userName" class="order__label">Ваше имя:</label>
-                <input
-                  type="text"
-                  id="userName"
-                  name="userName"
-                  class="order__input"
-                  placeholder="Введите ваше имя"
-                />
-              </div>
-              <div class="order__wrap-input">
-                <label for="phone" class="order__label">Ваш телефон:</label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  class="order__input"
-                  placeholder="Введите ваш номер телефона"
-                />
-              </div>
-              <div class="order__wrap-input">
-                <label for="email" class="order__label">Ваша почта:</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="order__input"
-                  placeholder="Введите ваш адрес электронной почты"
-                />
-              </div>
-              <div class="order__wrap-select">
-                <label for="changeConnect" class="order__label">Выбор связи:</label>
-                <select class="order__select" name="changeConnect" id="changeConnect">
-                  <option value="" disabled selected>Выбрать</option>
-                  <option value="phone">Звонок на телефон</option>
-                  <option value="telegram">Telegram</option>
-                  <option value="email">E-mail</option>
-                </select>
-              </div>
-              <button class="button order__button" type="button">Отправить заявку</button>
-              <div class="order__wrap-checkboxes">
-                <div class="order__block-checkbox">
-                  <label for="checkBusiness" class="order__label-checkbox">
-                    <input
-                      type="checkbox"
-                      class="order__checkbox visually-hidden"
-                      name="checkBusiness"
-                      id="checkBusiness"
-                    />
-                    <span class="order__checkmark"></span>
-                    <span class="order__checkbox-text">Проверка присутствия бизнеса в интернете</span>
-                  </label>
-                </div>
-                <div class="order__block-checkbox">
-                  <label for="checkboxSite" class="order__label-checkbox">
-                    <input
-                      type="checkbox"
-                      class="order__checkbox visually-hidden"
-                      name="checkboxSite"
-                      id="checkboxSite"
-                    />
-                    <span class="order__checkmark"></span>
-                    <span class="order__checkbox-text">Интернет-сайт для бизнеса</span>
-                  </label>
-                </div>
-                <div class="order__block-checkbox">
-                  <label for="checkboxSystem" class="order__label-checkbox">
-                    <input
-                      type="checkbox"
-                      class="order__checkbox visually-hidden"
-                      name="checkboxSystem"
-                      id="checkboxSystem"
-                    />
-                    <span class="order__checkmark"></span>
-                    <span class="order__checkbox-text">Система</span>
-                  </label>
-                </div>
-                <div class="order__block-checkbox">
-                  <label for="checkboxManagment" class="order__label-checkbox">
-                    <input
-                      type="checkbox"
-                      class="order__checkbox visually-hidden"
-                      name="checkboxManagment"
-                      id="checkboxManagment"
-                    />
-                    <span class="order__checkmark"></span>
-                    <span class="order__checkbox-text">Управление</span>
-                  </label>
-                </div>
-              </div>
+      <section class="order">
+        <div class="content">
+          <div class="order__grid">
+            <div class="order__wrap-img">
+              <picture>
+                <source media="(min-width: 1170px)" srcset="img/contacts-foto-desktop.webp" />
+                <img src="img/contacts-foto-mobile.webp" alt="Фото офиса iproman" />
+              </picture>
             </div>
-          </form>
+            <h2 class="order__title">Свяжитесь с нами и мы сделаем профессионально</h2>
+            <form class="order__form">
+              <div class="order__form-grid">
+                <div class="order__wrap-input">
+                  <label for="userName" class="order__label">Ваше имя:</label>
+                  <input
+                    type="text"
+                    id="userName"
+                    name="userName"
+                    class="order__input"
+                    placeholder="Введите ваше имя"
+                  />
+                </div>
+                <div class="order__wrap-input">
+                  <label for="phone" class="order__label">Ваш телефон:</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="order__input"
+                    placeholder="Введите ваш номер телефона"
+                  />
+                </div>
+                <div class="order__wrap-input">
+                  <label for="email" class="order__label">Ваша почта:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="order__input"
+                    placeholder="Введите ваш адрес электронной почты"
+                  />
+                </div>
+                <div class="order__wrap-select">
+                  <label for="changeConnect" class="order__label">Выбор связи:</label>
+                  <select class="order__select" name="changeConnect" id="changeConnect">
+                    <option value="" disabled selected>Выбрать</option>
+                    <option value="phone">Звонок на телефон</option>
+                    <option value="telegram">Telegram</option>
+                    <option value="email">E-mail</option>
+                  </select>
+                </div>
+                <button class="button order__button" type="button">Отправить заявку</button>
+                <div class="order__wrap-checkboxes">
+                  <div class="order__block-checkbox">
+                    <label for="checkBusiness" class="order__label-checkbox">
+                      <input
+                        type="checkbox"
+                        class="order__checkbox visually-hidden"
+                        name="checkBusiness"
+                        id="checkBusiness"
+                      />
+                      <span class="order__checkmark"></span>
+                      <span class="order__checkbox-text">Проверка присутствия бизнеса в интернете</span>
+                    </label>
+                  </div>
+                  <div class="order__block-checkbox">
+                    <label for="checkboxSite" class="order__label-checkbox">
+                      <input
+                        type="checkbox"
+                        class="order__checkbox visually-hidden"
+                        name="checkboxSite"
+                        id="checkboxSite"
+                      />
+                      <span class="order__checkmark"></span>
+                      <span class="order__checkbox-text">Интернет-сайт для бизнеса</span>
+                    </label>
+                  </div>
+                  <div class="order__block-checkbox">
+                    <label for="checkboxSystem" class="order__label-checkbox">
+                      <input
+                        type="checkbox"
+                        class="order__checkbox visually-hidden"
+                        name="checkboxSystem"
+                        id="checkboxSystem"
+                      />
+                      <span class="order__checkmark"></span>
+                      <span class="order__checkbox-text">Система</span>
+                    </label>
+                  </div>
+                  <div class="order__block-checkbox">
+                    <label for="checkboxManagment" class="order__label-checkbox">
+                      <input
+                        type="checkbox"
+                        class="order__checkbox visually-hidden"
+                        name="checkboxManagment"
+                        id="checkboxManagment"
+                      />
+                      <span class="order__checkmark"></span>
+                      <span class="order__checkbox-text">Управление</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="footer__grid content">
+      <div class="footer-grid content">
         <svg
           class="logo-footer"
           width="112"
@@ -522,7 +524,7 @@
           <li class="contacts-footer__item">
             <a href="#" class="contacts__link whatsapp-link">+66 94 583-33-78</a>
           </li>
-          <li class="contacts-footer_email contacts__item_email">
+          <li class="contacts-footer__item contacts__item_email">
             <a href="mailto:info@iproman.ru" class="contacts__link email-link">info@iproman.ru</a>
           </li>
         </ul>
